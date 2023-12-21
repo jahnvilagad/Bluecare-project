@@ -1,56 +1,57 @@
 import React from 'react';
-// import logo from '../assets/img/logo/white.png';
+import './assets/css/custom.css'
+import logo from './assets/img/logo/white.png'
+import { Link } from 'react-router-dom';
 
 export const Sidebar = () => {
   return (
     <div className='bg-white'>
       <div className='m-2'>
-        <i className='bi bi-bootstrap-fill me-2 fs-4'></i>
-        <span className='brand-name fs-4'>logo</span>
+      <img src={logo} className="App-logo" alt="logo" height={40}/>
       </div>
-      <hr className='text-dark'/>
+      <hr className='text-dark' />
       <div className='list-group list-group-flush'>
-        <a className='list-group-item py-2'>
-          <i className='bi bi-grid-1x2-fill fs-5 me-2'></i>
-          <span className='fs-5'>Dashboard</span>
-        </a>
-        <a className='list-group-item py-2'>
-          <i className='bi bi-speedometer2 fs-5 me-2'></i>
-          <span className='fs-5'>Appointments</span>
-        </a>
-        <a className='list-group-item py-2'>
-          <i className='bi bi-speedometer2 fs-5 me-2'></i>
-          <span className='fs-5'>Book Appointments</span>
-        </a>
-        <a className='list-group-item py-2'>
-          <i className='bi bi-speedometer2 fs-5 me-2'></i>
-          <span className='fs-5'>Medical History</span>
-        </a>
-        <a className='list-group-item py-2'>
-          <i className='bi bi-speedometer2 fs-5 me-2'></i>
-          <span className='fs-5'>Prescriptions</span>
-        </a>
-        <a className='list-group-item py-2'>
-          <i className='bi bi-speedometer2 fs-5 me-2'></i>
-          <span className='fs-5'>Upload Prescription</span>
-        </a>
-        <a className='list-group-item py-2'>
-          <i className='bi bi-speedometer2 fs-5 me-2'></i>
-          <span className='fs-5'>Profile</span>
-        </a>
+        <Link to="/" className='list-group-item py-2'>
+          <i className='bi bi-grid-1x2-fill fs-5 me-3'></i>
+          <span className='fs-6'>Dashboard</span>
+        </Link>
+        <Link to="/appointments" className='list-group-item py-3'>
+          <i className='bi bi-speedometer2 fs-5 me-3'></i>
+          <span className='fs-6'>Appointments</span>
+        </Link>
+        <Link className='list-group-item py-3'>
+          <i className='bi bi-speedometer2 fs-5 me-3'></i>
+          <span className='fs-6'>Book Appointments</span>
+        </Link>
+        <Link className='list-group-item py-3'>
+          <i className='bi bi-speedometer2 fs-5 me-3'></i>
+          <span className='fs-6'>Medical History</span>
+        </Link>
+        <Link className='list-group-item py-3'>
+          <i className='bi bi-speedometer2 fs-5 me-3'></i>
+          <span className='fs-6'>Prescriptions</span>
+        </Link>
+        <Link className='list-group-item py-3'>
+          <i className='bi bi-speedometer2 fs-5 me-3'></i>
+          <span className='fs-6'>Upload Prescription</span>
+        </Link>
+        <Link className='list-group-item py-3'>
+          <i className='bi bi-speedometer2 fs-5 me-3'></i>
+          <span className='fs-6'>Profile</span>
+        </Link>
 
-        <a className='list-group-item py-2'>
-          <i className='bi bi-speedometer2 fs-5 me-2'></i>
-          <span className='fs-5'>Sample Collection Department Mapping</span>
-        </a>
-        <a className='list-group-item py-2'>
-          <i className='bi bi-speedometer2 fs-5 me-2'></i>
-          <span className='fs-5'>Set Value Master</span>
-        </a>
-        <a className='list-group-item py-2'>
-          <i className='bi bi-speedometer2 fs-5 me-2'></i>
-          <span className='fs-5'>Logout</span>
-        </a>
+        <Link className='list-group-item py-3'>
+          <i className='bi bi-speedometer2 fs-5 me-3'></i>
+          <span className='fs-6'>Sample Collection Department Mapping</span>
+        </Link>
+        <Link className='list-group-item py-3'>
+          <i className='bi bi-speedometer2 fs-5 me-3'></i>
+          <span className='fs-6'>Set Value Master</span>
+        </Link>
+        <Link className='list-group-item py-3'>
+          <i className='bi bi-speedometer2 fs-5 me-3'></i>
+          <span className='fs-6'>Logout</span>
+        </Link>
       </div>
     </div>
   )

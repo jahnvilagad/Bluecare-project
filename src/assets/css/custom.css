@@ -7,7 +7,47 @@
   font-family: "OpenSans", sans-serif !important;
 }
 
-.ImgOverlay:after {
+.list-group a {
+  background-color: #f6f9fc;
+  margin-bottom: 3px;
+  border: 0;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.list-group a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar {
+  background-color: #5e72e4;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar-brand {
+  cursor: pointer;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #fff;
+}
+
+.image-overlay {
+  background-image: url(../img/banner/profile-cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 240px;
+  position: relative;
+  width: 100%;
+}
+
+.image-overlay:after {
   content: '';
   position: absolute;
   top: 0;
@@ -18,47 +58,21 @@
   opacity: .9;
 }
 
-.TableBg {
-  background-color: #F6F9FC;
-  border-bottom: 0;
-}
-
-.CardMr {
-  margin-right: 1.5rem;
-}
-
-.DashboardIcon {
+.image-overlay h1{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #fff;
   font-size: 2rem;
-  color: #5e72e4;
-  box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15) !important;
-  border-radius: 50%;
+  font-weight: 600;
+  padding: 24px;
 }
 
-.css-vqmohf-MuiButtonBase-root-MuiRadio-root {
-  display: none;
+.navbar{
+  min-height: 77px;
 }
 
-.AppBar {
-  background-color: #fff !important;
-  box-shadow: unset !important;
-}
-
-.ClipPolygon {
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 9%, 100% 0);
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 9%, 100% 0);
-}
-
-.BgColor{
-  background-color: #172b4d;
-}
-
-.TextRed{
-  color: #FF0000;
-}
-
-
-@media (max-width:1024px) {
-  .CardMr {
-    margin: 0 1.5rem;
-  }
+.card-top{
+  margin-top: -3rem;
 }
